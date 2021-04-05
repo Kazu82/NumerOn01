@@ -3,8 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class Scan {
 
-    //解答者の入力した値を格納する配列
-    private ArrayList<Integer> numberArr1 = new ArrayList<Integer>();
+    private ArrayList<Integer> numberArr1 = new ArrayList<Integer>(); //入力された3桁の数字を格納するリスト
 
     public ArrayList<Integer> getNumberArr() {
         return this.numberArr1;
@@ -16,7 +15,7 @@ public class Scan {
             Scanner scanner = new Scanner(System.in);
             int int1 = scanner.nextInt();
             if(int1 < 1000 && int1 > 0) {
-                Integer[] integer1 = new Integer[3]; 
+                Integer[] integer1 = new Integer[3]; //１，１０，１００の位の数字をそれぞれ配列に格納。
                 integer1[0] = Integer.valueOf(int1 / 100);
                 integer1[1] = Integer.valueOf(int1 % 100 / 10);
                 integer1[2] = Integer.valueOf(int1 % 10);

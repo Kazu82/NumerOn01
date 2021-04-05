@@ -8,7 +8,8 @@ public class Logic {
     public ArrayList<Integer> getThreeNumberArr() {
         return this.threeNumberArr;
     }
-
+    
+    //正解となる3桁の数字を作成。
     public void createThreeNumber() {
         for(;;) {
             for(int i = 0; i < 3; i++){
@@ -20,7 +21,8 @@ public class Logic {
             }
         }
     }
-
+    
+    //BITEのカウント
     public int biteCount(ArrayList<Integer> answerArr, ArrayList<Integer> numberArr) {
         int biteCount = 0;
         if(answerArr.get(0) == numberArr.get(1) || answerArr.get(0) == numberArr.get(2)) {
@@ -34,7 +36,7 @@ public class Logic {
         }
         return biteCount;
     }
-
+    //EATのカウント
     public int eatCount(ArrayList<Integer> answerArr, ArrayList<Integer> numberArr) {
         int eatCount = 0;
         for(int i = 0; i < 3; i++) {
