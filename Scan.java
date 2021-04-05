@@ -12,8 +12,6 @@ public class Scan {
 
     public void numberScan() {
         System.out.println("0~9のうち3つの数字を入力してください。");
-        //後で削除
-        System.out.println(numberArr1.size());
         for(;;) {
             Scanner scanner = new Scanner(System.in);
             int int1 = scanner.nextInt();
